@@ -178,7 +178,13 @@ https://drive.google.com/uc?export=download&id=12mcb10eGm_Fttbll2Z2jwK1AHYWHeXSz
 Tenor:  
 https://drive.google.com/uc?export=download&id=1BNXFqyUp41KPGeyamNwoWQ5Pg5qFCasq  
 Baixo:  
-https://drive.google.com/uc?export=download&id=1ER1cQYXs_oNQYVf6SJfdRVlP3MASoJLi  
+https://drive.google.com/uc?export=download&id=1ER1cQYXs_oNQYVf6SJfdRVlP3MASoJLi
+
+🎵 Paciência
+Soprano: [Não disponível]
+Contralto: https://drive.google.com/uc?export=download&id=1jDsW5iVftL0cyy66QHUn0KwXNnGc1Fz4
+Tenor: [Não disponível]
+Baixo: [Não disponível]
 
 🎶 Sampa  
 Soprano:  
@@ -245,6 +251,10 @@ https://drive.google.com/uc?export=download&id=1alkZwfHGOmlN74EVNNfYLQ0MxHYhvXuM
 🎵 Canta Brasil
 Partitura:
 https://drive.google.com/uc?export=download&id=1dnqQomrMlcvTXFhScC4Ewuv75ADiM9av
+
+🎵 Chattanooga
+Partitura:
+https://drive.google.com/uc?export=download&id=1kF0jbehlPuj02hZ-79BRO55XkEIZx7wG
 
 🎵 Coral CAP - Parte 1
 Partitura:
