@@ -1,3 +1,44 @@
+📚 *Biblioteca Digital do Coral do CAP* 📚
+
+📁 *Pasta Principal*:  
+https://drive.google.com/drive/folders/1lx1bBQyTxxdSQDhwusJ6wAB8B2PLGulQ
+
+🎼 *Partituras*:  
+https://drive.google.com/drive/folders/1rPXLDXEMNf50QOW821MgUGcD8lM9HlM3
+
+🎵 *Áudios*:  
+👩 *Soprano*:  
+https://drive.google.com/drive/folders/1JP3z7-3Tp5jFW9DoWTojxpCgRz5J4yRO  
+👩‍🦰  *Contralto*:  
+https://drive.google.com/drive/folders/1vHt96ISVztJfxv_7sNz2BWoLww8Ukgm7  
+👨 👩‍🦰  *Tenor*:  
+https://drive.google.com/drive/folders/1dEYbF-YOTwwqZSwfIIIrs9HCV9XD8oRd  
+👨‍🦰 *Baixo*:  
+https://drive.google.com/drive/folders/17mu6UHBi6pb-yyTtsiaf4V0txlzr3bc-
+
+🎶 Acesse as partituras e áudios para os ensaios! 🎶
+📚 *Biblioteca Digital do Coral do CAP* 📚
+
+📁 *Pasta Principal*:  
+https://tinyurl.com/BibliotecaCCap
+
+🎼 *Partituras*:  
+https://tinyurl.com/CCapPartituras
+
+🎵 *Áudios*:  
+👩 *Soprano*:  
+https://tinyurl.com/CCapSopranos  
+👩‍🦰 *Contralto*:  
+https://tinyurl.com/CCapContralto  
+👨 *Tenor*:  
+https://tinyurl.com/CCapTenor  
+👨‍🦰 *Baixo*:  
+https://tinyurl.com/CCapBaixo
+
+🎶 Acesse as partituras e áudios para os ensaios! 🎶
+*Nota*: Entre em contato se precisar de ajuda!
+
+
 Áudios:
 
 🎶 Vivaldi's Gloria Part 1 - Gloria  
