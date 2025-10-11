@@ -21,20 +21,20 @@ https://drive.google.com/drive/folders/17mu6UHBi6pb-yyTtsiaf4V0txlzr3bc-
 📚 *Biblioteca Digital do Coral do CAP* 📚
 
 📁 *Pasta Principal*:  
-https://tinyurl.com/BibliotecaCCap
+https://coraldocap.github.io/r/biblioteca.html
 
 🎼 *Partituras*:  
-https://tinyurl.com/CCapPartituras
+https://coraldocap.github.io/r/partituras.html
 
 🎵 *Áudios*:  
 👩 *Soprano*:  
-https://tinyurl.com/CCapSopranos  
+https://coraldocap.github.io/r/soprano.html  
 👩‍🦰 *Contralto*:  
-https://tinyurl.com/CCapContralto  
-👨👩‍🦰 *Tenor*:  
-https://tinyurl.com/CCapTenor  
+https://coraldocap.github.io/r/contralto.html  
+👨 👩‍🦰 *Tenor*:  
+https://coraldocap.github.io/r/tenor.html  
 👨‍🦰 *Baixo*:  
-https://tinyurl.com/CCapBaixo
+https://coraldocap.github.io/r/baixo.html
 
 🎶 Acesse as partituras e áudios para os ensaios! 🎶
 *Nota*: Entre em contato se precisar de ajuda!
