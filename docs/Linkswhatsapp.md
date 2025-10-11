@@ -31,7 +31,7 @@ https://tinyurl.com/CCapPartituras
 https://tinyurl.com/CCapSopranos  
 👩‍🦰 *Contralto*:  
 https://tinyurl.com/CCapContralto  
-👨 *Tenor*:  
+👨👩‍🦰 *Tenor*:  
 https://tinyurl.com/CCapTenor  
 👨‍🦰 *Baixo*:  
 https://tinyurl.com/CCapBaixo
