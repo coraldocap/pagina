@@ -36,6 +36,9 @@ https://coraldocap.github.io/r/tenor.html
 👨‍🦰 *Baixo*:  
 https://coraldocap.github.io/r/baixo.html
 
+Como usar o drive:
+https://www.youtube.com/watch?v=1zv3EwUzGas
+
 🎶 Acesse as partituras e áudios para os ensaios! 🎶
 *Nota*: Entre em contato se precisar de ajuda!
 
