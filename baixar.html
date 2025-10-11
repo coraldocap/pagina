@@ -1,0 +1,731 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Coral do CAP - Bem-vindos Á Biblioteca Digital do Coral do CAP</title>
+  <meta name="description" content=" Bem-vindos Á Biblioteca Digital do Coral do CAP" />
+  <link rel="canonical" href="" />
+  <style>
+    :root{
+      --red:#c8102e; 
+      --dark-red:#9b0a20;
+      --white:#ffffff;
+      --muted:#f6f6f6;
+      --text:#222;
+      --max-width:1100px;
+      --radius:14px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:var(--white); color:var(--text); -webkit-font-smoothing:antialiased}
+
+    header{background:linear-gradient(90deg,var(--red),var(--dark-red)); color:var(--white); padding:28px 16px}
+    .container{max-width:var(--max-width);margin:0 auto;padding:0 16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{min-width:72px;height:56px;padding:0 8px;border-radius:12px;background:var(--white);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px;color:var(--red);box-shadow:0 6px 18px rgba(0,0,0,0.12)}
+    .logo img{max-height:48px;max-width:100%}
+    nav{margin-top:12px}
+    nav a{color:rgba(255,255,255,0.95);margin-right:14px;text-decoration:none;font-weight:600}
+
+    main{padding:36px 0}
+    .hero{display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .hero-left{flex:1}
+    h1{margin:0;font-size:clamp(24px,4.5vw,40px);line-height:1.02}
+    p.lead{margin:14px 0 0;color:#222;opacity:0.9}
+    .cta{margin-top:18px}
+    .btn{display:inline-block;padding:10px 16px;border-radius:10px;background:var(--red);color:var(--white);text-decoration:none;font-weight:700}
+
+    .grid{display:grid;grid-template-columns:1fr;gap:28px;margin-top:28px}
+
+    .card{background:var(--muted);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+
+    #sobre h2, #partituras h2, #drive h2, #audios h2, #apresentacoes h2, #aviso h2{color:var(--red)}
+    .about-text{line-height:1.6}
+
+    .sheet-list{display:grid;gap:12px;margin-top:16px}
+    .sheet{display:flex;align-items:center;justify-content:space-between;padding:12px;border-radius:10px;background:var(--white);box-shadow:0 4px 10px rgba(0,0,0,0.04)}
+    .sheet .meta{display:flex;gap:12px;align-items:center}
+    .sheet .file{font-weight:600}
+    .sheet small{display:block;color:#666}
+    .sheet a{color:var(--red);text-decoration:none;font-weight:700}
+
+    .audio-list{gap:0px;margin-top:16px;list-style:none;display:block;}
+    .audio-item{background:var(--white);padding:12px;border-radius:10px;margin-bottom:12px;box-shadow:0 4px 10px rgba(0,0,0,0.04)}
+    .audio-title{font-weight:700;margin-bottom:8px;color:var(--red)}
+    .audio-links {
+      font-weight: 600;
+    }
+    .audio-links a{
+      color:var(--red);
+      text-decoration:none;
+      font-weight:600;
+      margin:0 4px;
+    }
+
+    .video-list{display:grid;gap:12px;margin-top:16px}
+    .video-item{border-radius:12px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+    .video-item iframe{width:100%;height:300px;border:0;display:block;border-radius:12px}
+
+    footer{padding:20px 0;text-align:center;color:#444}
+    .muted{color:#666;font-size:14px}
+  </style>
+</head>
+<body>
+<header>
+    <div class="container">
+      <div class="brand">
+        <div class="logo">Coral do CAP</div>
+        <div>
+          <div style="font-weight:800;letter-spacing:.6px">Bem-vindos Á Biblioteca Digital do Coral do CAP</div>
+          <div style="font-size:13px;opacity:.95">Página para auxilar os coralistas | Partituras, Áudios e Apresentações</div>
+        </div>
+      </div>
+      <nav aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#drive">Drive</a>
+		<a href="#partituras">Baixar Partituras</a>
+        <a href="#audios">Baixar Áudios</a>
+        <a href="#apresentacoes">Apresentações</a>
+		<!--<a href="https://paulistano.org" target="_blank" rel="noopener">Como usar o Drive</a>-->
+        <a href="https://paulistano.org" target="_blank" rel="noopener">Paulistano.org</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+ <!-- AVISO DE USO RESTRITO -->
+    <section id="aviso" class="card" style="margin-top:28px; background:#fff4e5; border-left:5px solid var(--red);">
+      <h2>Aviso Importante</h2>
+      <p class="about-text" style="color:#663300;">
+        Este site e seus conteúdos destinam-se exclusivamente aos membros do Coral do CAP. O uso deste material é permitido apenas para fins educativos. Todos os direitos autorais devem ser respeitados; partituras, áudios e vídeos não podem ser compartilhados publicamente sem autorização.</p>
+    </section>   
+    <section id="partituras" class="card" style="margin-top:28px">
+      <h2>Partituras</h2>
+      <ul class="sheet-list">
+        <li class="sheet">
+  <div class="meta">
+    <div style="font-weight:800;color:var(--red)">🎼</div>
+    <div>
+      <div class="file"><a href="https://drive.google.com/uc?export=download&id=1NMo-56bxs787EFcp0598LST_TdJaflMD" target="_blank">Todas as Partituras</a></div>
+      <small></small>
+    </div>
+  </div>
+</li>
+
+<!-- Paulistano -->
+<li class="sheet">
+  <div class="meta">
+    <div style="font-weight:800;color:var(--red)">🎼</div>
+    <div>
+      <div class="file">
+        <a href="https://drive.google.com/uc?export=download&id=1zwlAR9a1KpRcJ9EvBDmx-OH_WvNaC6Dg" target="_blank">
+          Paulistano
+        </a>
+      </div>
+      <small></small>
+    </div>
+  </div>
+</li>
+
+<!-- Restante (ordem alfabética) -->
+<li class="sheet">
+  <div class="meta">
+    <div style="font-weight:800;color:var(--red)">🎼</div>
+    <div>
+      <div class="file">
+        <a href="https://drive.google.com/uc?export=download&id=167qY2GbcmVia2Z0tHO_9mtJoAIcpcVXS" target="_blank">
+          As Pastorinhas
+        </a>
+      </div>
+      <small></small>
+    </div>
+  </div>
+</li>
+
+<li class="sheet">
+  <div class="meta">
+    <div style="font-weight:800;color:var(--red)">🎼</div>
+    <div>
+      <div class="file">
+        <a href="https://drive.google.com/uc?export=download&id=1Hj5x7Z5AwBxxxbJV48KgcGxbCo6Z9IYW" target="_blank">
+          Ave Maria
+        </a>
+      </div>
+      <small></small>
+    </div>
+  </div>
+</li>
+
+<li class="sheet">
+  <div class="meta">
+    <div style="font-weight:800;color:var(--red)">🎼</div>
+    <div>
+      <div class="file">
+        <a href="https://drive.google.com/uc?export=download&id=1L30kFrcvpXTZiTi-jCX7xe-23IG8NIrT" target="_blank">
+          Ave Verum Corpus - Mozart
+        </a>
+      </div>
+      <small></small>
+    </div>
+  </div>
+</li>
+
+<li class="sheet">
+  <div class="meta">
+    <div style="font-weight:800;color:var(--red)">🎼</div>
+    <div>
+      <div class="file">
+        <a href="https://drive.google.com/uc?export=download&id=1KUDg-6aWrjC7gzYhYi25b3vj4onQVCzQ" target="_blank">
+          Azulão
+        </a>
+      </div>
+      <small></small>
+    </div>
+  </div>
+</li>
+
+<li class="sheet">
+  <div class="meta">
+    <div style="font-weight:800;color:var(--red)">🎼</div>
+    <div>
+      <div class="file">
+        <a href="https://drive.google.com/uc?export=download&id=1alkZwfHGOmlN74EVNNfYLQ0MxHYhvXuM" target="_blank">
+          Caminho das Aguas
+        </a>
+      </div>
+      <small></small>
+    </div>
+  </div>
+</li>
+
+<li class="sheet">
+  <div class="meta">
+    <div style="font-weight:800;color:var(--red)">🎼</div>
+    <div>
+      <div class="file">
+        <a href="https://drive.google.com/uc?export=download&id=1kF0jbehlPuj02hZ-79BRO55XkEIZx7wG" target="_blank">
+          Chattanooga
+        </a>
+      </div>
+      <small></small>
+    </div>
+  </div>
+</li>
+
+		  <li class="sheet">
+  <div class="meta">
+    <div style="font-weight:800;color:var(--red)">🎼</div>
+    <div>
+      <div class="file">
+        <a href="https://drive.google.com/uc?export=download&id=1GTnFivUruQ0qpXdOxcT8I135R4CKY0HU" target="_blank">
+          Caminho das Aguas
+        </a>
+      </div>
+      <small></small>
+    </div>
+  </div>
+</li>
+<li class="sheet">
+  <div class="meta">
+    <div style="font-weight:800;color:var(--red)">🎼</div>
+    <div>
+      <div class="file">
+        <a href="https://drive.google.com/uc?export=download&id=1DetRJMrJ6uEvDiASMpQXcZfKk6hdETS2" target="_blank">
+          In My Life
+        </a>
+      </div>
+      <small></small>
+    </div>
+  </div>
+</li>
+
+<li class="sheet">
+  <div class="meta">
+    <div style="font-weight:800;color:var(--red)">🎼</div>
+    <div>
+      <div class="file">
+        <a href="https://drive.google.com/uc?export=download&id=1-cQbFFZTfG75e1t8Ea_Q_W0rdH4C41lO" target="_blank">
+          Let's Us Breake
+        </a>
+      </div>
+      <small></small>
+    </div>
+  </div>
+</li>
+
+<li class="sheet">
+  <div class="meta">
+    <div style="font-weight:800;color:var(--red)">🎼</div>
+    <div>
+      <div class="file">
+        <a href="https://drive.google.com/uc?export=download&id=1NMrTFpsNiCAjdAlQ0cb03tTPX5OXSInw" target="_blank">
+          Noite Santa
+        </a>
+      </div>
+      <small></small>
+    </div>
+  </div>
+</li>
+
+<li class="sheet">
+  <div class="meta">
+    <div style="font-weight:800;color:var(--red)">🎼</div>
+    <div>
+      <div class="file">
+        <a href="https://drive.google.com/uc?export=download&id=1X9nKgnkJDEDg9brsztaWkpk01IYLau05" target="_blank">
+          Paciência
+        </a>
+      </div>
+      <small></small>
+    </div>
+  </div>
+</li>
+
+<li class="sheet">
+  <div class="meta">
+    <div style="font-weight:800;color:var(--red)">🎼</div>
+    <div>
+      <div class="file">
+        <a href="https://drive.google.com/uc?export=download&id=1SkF-f_v60fRXmEJorAsZfmNE7hSYKGrr" target="_blank">
+          Porgy And Bess (Act III Scene 3) I'm On My Way
+        </a>
+      </div>
+      <small></small>
+    </div>
+  </div>
+</li>
+
+<li class="sheet">
+  <div class="meta">
+    <div style="font-weight:800;color:var(--red)">🎼</div>
+    <div>
+      <div class="file">
+        <a href="https://drive.google.com/uc?export=download&id=1KFyLLWh-lh6hmIddgUPuArGhIJpwf4XG" target="_blank">
+          Monsieur Binot
+        </a>
+      </div>
+      <small></small>
+    </div>
+  </div>
+</li>
+
+<li class="sheet">
+  <div class="meta">
+    <div style="font-weight:800;color:var(--red)">🎼</div>
+    <div>
+      <div class="file">
+        <a href="https://drive.google.com/uc?export=download&id=1R6-qRu81cRsrmRWC0EWJbEcDl8ZYtGed" target="_blank">
+          HABANERA Carmen Bizet solo
+        </a>
+      </div>
+      <small></small>
+    </div>
+  </div>
+</li>
+
+<li class="sheet">
+  <div class="meta">
+    <div style="font-weight:800;color:var(--red)">🎼</div>
+    <div>
+      <div class="file">
+        <a href="https://drive.google.com/uc?export=download&id=1-s6qxtxWW1h__I0nytz5wCLhZRMGTW1o" target="_blank">
+          So Quero um Xodo
+        </a>
+      </div>
+      <small></small>
+    </div>
+  </div>
+</li>
+
+<li class="sheet">
+  <div class="meta">
+    <div style="font-weight:800;color:var(--red)">🎼</div>
+    <div>
+      <div class="file">
+        <a href="https://drive.google.com/uc?export=download&id=1IeXUMSYQsmlRouLjjYJhNbeDD9fMxY5F" target="_blank">
+          Sampa, São Paulo
+        </a>
+      </div>
+      <small></small>
+    </div>
+  </div>
+</li>
+
+<li class="sheet">
+  <div class="meta">
+    <div style="font-weight:800;color:var(--red)">🎼</div>
+    <div>
+      <div class="file">
+        <a href="https://drive.google.com/uc?export=download&id=1DeBGJa_R-5MlEuZdUtPFJF512TI6Scjy" target="_blank">
+          The Long And Winding Road
+        </a>
+      </div>
+      <small></small>
+    </div>
+  </div>
+</li>
+
+<li class="sheet">
+  <div class="meta">
+    <div style="font-weight:800;color:var(--red)">🎼</div>
+    <div>
+      <div class="file">
+        <a href="https://drive.google.com/uc?export=download&id=1kZqWoSAAv7IVF1DA2BPwtdY-EbcuWaAh" target="_blank">
+          VÁ, PENSIERO&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </a>
+      </div>
+      <small></small>
+    </div>
+  </div>
+</li>
+
+
+      </ul>
+    </section>
+
+    <section id="audios" class="card" style="margin-top:28px">
+      <h2>Áudios</h2>
+      <p class="muted">Clique nos links para baixar os áudios de acorodo com cada naipe.</p>
+      <ul class="audio-list">
+		   
+		   <!-- Completos -->
+<li class="audio-item">
+  <div class="audio-title"> 🎧 Todas as Músicas Por Vozes 
+    <span class="audio-links">
+	  <a href="https://drive.google.com/uc?export=download&id=1cP4H9JNz8vdbGi9CeZvvOGE9_DzOw4fQ" target="_blank">[Soprano Parte 1]</a>
+		<a href="https://drive.google.com/uc?export=download&id=1GihwDqZgT8IC4bjvCuV4rIEi1uV9GGBN" target="_blank">[Soprano Parte 2]</a>
+      
+ <a href="https://drive.google.com/uc?export=download&id=1pGQWTXixZ7jPIEbPOZTCoeD7rUsmz6LI" target="_blank">[Contralto Parte 1]</a>     
+		<a href="https://drive.google.com/uc?export=download&id=1WPLB7iENCz42U-gvHFNg6Y8LndmyN1Bg" target="_blank">[Contralto Parte 2]</a>
+		<a href="https://drive.google.com/uc?export=download&id=1Gp6tWfdaXl-zKMBBG9Syw2qT8S6mKoIP" target="_blank">[Tenor Parte 1]</a>
+		<a href="https://drive.google.com/uc?export=download&id=1tupBs2RVkD_wENhkqHfOo8S1JWlryo3U" target="_blank">[Tenor Parte 2]</a>
+
+
+     <a href="https://drive.google.com/uc?export=download&id=17Jg8-KYOAmPWWsgmz-Vv1l5LkJ1hH0Pb" target="_blank">[Baixo Parte 1]</a> 
+		<a href="https://drive.google.com/uc?export=download&id=1I2uJdJdN_3PLXXc0Qy7v2CYlAmjTbGk6" target="_blank">[Baixo Parte 2]</a>
+
+    </span>
+  </div>
+</li>
+
+  <!-- As Pastorinhas -->
+<li class="audio-item">
+  <div class="audio-title"> 🎧 As Pastorinhas 
+    <span class="audio-links">
+	  [Soprano ❌] 
+      [<a href="https://drive.google.com/uc?export=download&id=1rW9P5XGc_NvqXtzGu3lJPcItIFj-nxpd" target="_blank">Contralto</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1mXVWKl_Gf5S8Rt67Oh3vH-XgJPZvEpNn" target="_blank">Tenor</a>]
+      [<a href="https://drive.google.com/uc?export=download&id=1T6GeDytV80KgfxlXycQX0XS51Acstua8" target="_blank">Baixo</a>] 
+    </span>
+  </div>
+</li>
+
+<!-- Ave Maria -->
+<li class="audio-item">
+  <div class="audio-title"> 🎧 Ave Maria 
+    <span class="audio-links">
+      [<a href="https://drive.google.com/uc?export=download&id=1kEasrdIUjapDTGLhp6kdgF_cHWi-jlAx" target="_blank">Soprano</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1nd6TyDfuKAH7WLdMlU9WhnqPN4ChLtZE" target="_blank">Contralto</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1zFsOVWgMXgU_p4yAXeCq_NaW_vvsCkcP" target="_blank">Tenor</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1DKEFtQNqsHvBIthTN3UKOCL6g01IdymD" target="_blank">Baixo</a>]
+    </span>
+  </div>
+</li>
+
+<!-- Ave Verum -->
+<li class="audio-item">
+  <div class="audio-title"> 🎧 Ave Verum 
+    <span class="audio-links">
+      [<a href="https://drive.google.com/uc?export=download&id=1KFX4RRvdPLtp2LFCzcpiWTHIDtAj2jpw" target="_blank">Soprano</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1RISqKFhimo84PVHhHoTVhoAyomi-ePN3" target="_blank">Contralto</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=15LiJIwJH6NsrAVGfhJr4T33D0HBHfAsy" target="_blank">Tenor</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1pqwESG5tZjPFbCggU8AsdPeniH-_pbsm" target="_blank">Baixo</a>]
+    </span>
+  </div>
+</li>
+
+<!-- Azulão -->
+<li class="audio-item">
+  <div class="audio-title"> 🎧 Azulão 
+    <span class="audio-links">
+      [<a href="https://drive.google.com/uc?export=download&id=1LkGh74HzrviKLvWTEmUQIfFlH-nKO7zD" target="_blank">Soprano</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1p5fMgP3J0eXp1yv03301IRmEy36ZqMcI" target="_blank">Contralto</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=17XmoCgVX458e9A_EM0qZrF8UZhT5hZF4" target="_blank">Tenor</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1M4UtgqcLV1SrFybT2GhM1SeoxqitHImg" target="_blank">Baixo</a>]
+    </span>
+  </div>
+</li>
+
+<!-- Caminho das Águas -->
+<li class="audio-item">
+  <div class="audio-title"> 🎧 Caminho das Águas 
+    <span class="audio-links">
+      [<a href="https://drive.google.com/uc?export=download&id=1b5nQSRHz7UMs_IqMbECzg-tenhO0oW_5" target="_blank">Soprano</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1XM2IkTU3aFxfrZ1-cUoE5DYJBz7EVDLZ" target="_blank">Contralto</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1GovW7mK0HItuVTni6RrK5QfcAzioNa2J" target="_blank">Tenor</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1N1FEDG8SrZJNthgbCn0F__hhRWvvndOa" target="_blank">Baixo</a>]
+    </span>
+  </div>
+</li>
+
+<!-- Canta Brasil -->
+<li class="audio-item">
+  <div class="audio-title"> 🎧 Canta Brasil 
+    <span class="audio-links">
+      [<a href="https://drive.google.com/uc?export=download&id=13UftPXXQwvyz4aPl1xKLTb87xZPMlGDH" target="_blank">Soprano</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1jXHkJoeB3gAzXDCQw8pBuhIxITUSUA1m" target="_blank">Contralto</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1eFNHeTzGhyo9uQwhuWwp42UrIOvmh1iL" target="_blank">Tenor</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=16Vzb2FGH5r4b0i8KrfSgN9qFFBQqGdEE" target="_blank">Baixo</a>]
+    </span>
+  </div>
+</li>
+
+<!-- Chattanooga -->
+<li class="audio-item">
+  <div class="audio-title"> 🎧 Chattanooga 
+    <span class="audio-links">
+      [<a href="https://drive.google.com/uc?export=download&id=1eFP59IKVozINyGsfHxusyhLVSBz0pxA7" target="_blank">Soprano 1</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1eNG46nePT8kHi05wC-gYEOW-La3pxWTf" target="_blank">Soprano 2</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=11cDo2X_FZynHND2foeQlwcHpBiLiW7gb" target="_blank">Contralto</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=154IcUmcHbZrerlBe0DhpV8uQv-yrkGlT" target="_blank">Tenor</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=155n3sNu_Be_w6DWlGdld6Ec7-wJzNMHK" target="_blank">Baixo</a>]
+    </span>
+  </div>
+</li>
+
+<!-- Festival Natalino -->
+<li class="audio-item">
+  <div class="audio-title"> 🎧 Festival Natalino 
+    <span class="audio-links">
+      [Soprano ❌] 
+      [Contralto ❌ 
+      [<a href="https://drive.google.com/uc?export=download&id=12SMfpKuILfBsyL4nHXfei8Nw5_Y2ly6s" target="_blank">Tenor</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1vAtypmLmhIt5MKTH5LIBad3gbXzq9crd" target="_blank">Baixo</a>]
+    </span>
+  </div>
+</li>
+
+<!-- Festival Sanctus SATB -->
+<li class="audio-item">
+  <div class="audio-title"> 🎧 Festival Sanctus SATB 
+    <span class="audio-links">
+      [<a href="https://drive.google.com/uc?export=download&id=1uBnwwg0bFNoUw9y7QI36CRDF7XN5PojS" target="_blank">Soprano</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1j3kMB20-d0nJ5OlpiOHgMbEsumyJ0cch" target="_blank">Contralto</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1D7K_vYvX7nujpqPB54VmNewzkggQiqh6" target="_blank">Tenor</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1MO5IHB3p_2pROjCy9p4UuzDZzcFc-jsL" target="_blank">Baixo</a>]
+    </span>
+  </div>
+</li>
+
+<!-- Gershwin - I'm On My Way -->
+<li class="audio-item">
+  <div class="audio-title"> 🎧 Gershwin - I'm On My Way 
+    <span class="audio-links">
+      [<a href="https://drive.google.com/uc?export=download&id=1FNanDo6dx4BfpTunMeSjowFw1UZuJYnp" target="_blank">Soprano</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=11SRy1bMsZxsNwnKim7tx483ZEeDLzmM0" target="_blank">Contralto</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1VVORK9QzuXQdRl19nSYR5IXQHwXuEgtg" target="_blank">Tenor</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1FwIQ9Hmm5Yp0CwsX1De3TKV_9Nh793ig" target="_blank">Baixo</a>]
+    </span>
+  </div>
+</li>
+
+<!-- Habanera -->
+<li class="audio-item">
+  <div class="audio-title"> 🎧 Habanera 
+    <span class="audio-links">
+      [<a href="https://drive.google.com/uc?export=download&id=1_vlf-5kT-VZvACYoNlLd8i5tk8bIKgRk" target="_blank">Soprano</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1VSJw7POwsUPtVBdd82P3lxd6FXqiOepj" target="_blank">Contralto</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1-1yDm8_tt00lDQNOMKny9sDYdlgc713L" target="_blank">Tenor</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1T6GeDytV80KgfxlXycQX0XS51Acstua8" target="_blank">Baixo</a>]
+    </span>
+  </div>
+</li>
+
+<!-- In My Life -->
+<li class="audio-item">
+  <div class="audio-title"> 🎧 In My Life 
+    <span class="audio-links">
+      [<a href="https://drive.google.com/uc?export=download&id=1CO9xqP6GdFeM4Z2KmeX_08Ortw7uKleO" target="_blank">Soprano 1</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1EIkNSZPP8bOi4qaJcRO0iE7wLCYa_rqp" target="_blank">Soprano 2</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1n_jAbwAXV59O-R3aJPG0WUm_mHoyLtwV" target="_blank">Contralto</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1j2vFMMBJQ9pyy94-tS6E_ay01rEcY4y2" target="_blank">Tenor</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=12824OuY4ysR02kKVcO0BLQqGMksCUntU" target="_blank">Baixo</a>]
+    </span>
+  </div>
+</li>
+
+<!-- Missa Festiva – Agnus Dei -->
+<li class="audio-item">
+  <div class="audio-title"> 🎧 Missa Festiva – Agnus Dei 
+    <span class="audio-links">
+      [<a href="https://drive.google.com/uc?export=download&id=12ST43kmoJhZFverhLAirxe5L2tGY8gy4" target="_blank">Soprano</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1DMV4_f9Y4rxJRzwq96Xh9nETF6SW8X5h" target="_blank">Contralto</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1kWw7ml2Cqz9bU0BEQXZXGbJ6MQh6xHLI" target="_blank">Tenor </a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1IfH08bvlpOJ_I0qsDzwC-9yRN14rVZGT" target="_blank">Baixo</a>]
+    </span>
+  </div>
+</li>
+
+<!-- Missa Festiva – Credo -->
+<li class="audio-item">
+  <div class="audio-title"> 🎧 Missa Festiva – Credo 
+    <span class="audio-links">
+      [<a href="https://drive.google.com/uc?export=download&id=1GFf0JQhEHs5YLiJwmiYI23ILCBWJysy0" target="_blank">Soprano</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1lVutnq4u3z7AEtLYtXgelN6uq7vdUJRu" target="_blank">Contralto</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1e6HCCsJ8dlnN7puLTbOX_Lhrhf4_vUq8" target="_blank">Tenor</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=13LACPxB3vdrIApthvPxonOFTBp4vZwrW" target="_blank">Baixo</a>]
+    </span>
+  </div>
+</li>
+
+<!-- Missa Festiva – Gloria -->
+<li class="audio-item">
+  <div class="audio-title"> 🎧 Missa Festiva – Gloria 
+    <span class="audio-links">
+      [<a href="https://drive.google.com/uc?export=download&id=1vFlgvr8E2zT03Vxdk_s05Cok0BxDAYKB" target="_blank">Soprano</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1Azpx-N-KFKL4Dj1Yu0lLPfEZK1Zx-Qo0" target="_blank">Contralto</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1osbwjAcZZCRXHS0AXEGPGPOlCX_jphhW" target="_blank">Tenor</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1Qg7wEjUy-2qBfxMWPiyxOq1wZrxRZunA" target="_blank">Baixo</a>]
+    </span>
+  </div>
+</li>
+
+<!-- Missa Festiva – Kyrie -->
+<li class="audio-item">
+  <div class="audio-title"> 🎧 Missa Festiva – Kyrie 
+    <span class="audio-links">
+      [<a href="https://drive.google.com/uc?export=download&id=1B9LxNlDiAh08c6DQbF20sOapO0tKsxE0" target="_blank">Soprano</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=12IDa1BPR_Qz4TI0KO8vVESHam8QzFoJ3" target="_blank">Contralto</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1mI5wnPyHRWUcwh6QnPr4kT5_2QzWLd_l" target="_blank">Tenor</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1GZnzb3QW2h4tV1FcNtEBzBe9NRbLVdEW" target="_blank">Baixo</a>]
+    </span>
+  </div>
+</li>
+
+<!-- Monsieur Binot -->
+<li class="audio-item">
+  <div class="audio-title"> 🎧 Monsieur Binot 
+    <span class="audio-links">
+      [<a href="https://drive.google.com/uc?export=download&id=1fmElqAgYbBguqc-rC4iyefyAu5d7rP4K" target="_blank">Soprano</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1qt7MDmo5MpjxgymNyhPiFkHavYR6cyz6" target="_blank">Contralto</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1NWxhqM8bjUy4lwEfQl8qOlagO4LHvKOy" target="_blank">Tenor</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1aUF2ph-bEKJXDpE41afCyZmDoPStd9Eh" target="_blank">Baixo</a>]
+    </span>
+  </div>
+</li>
+
+<!-- Noite Santa -->
+<li class="audio-item">
+  <div class="audio-title"> 🎧 Noite Santa 
+    <span class="audio-links">
+      [<a href="https://drive.google.com/uc?export=download&id=1kntKOT20DACy6-JTS_0WGaObWU1Z-8s_" target="_blank">Soprano</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=12mcb10eGm_Fttbll2Z2jwK1AHYWHeXSz" target="_blank">Contralto</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1BNXFqyUp41KPGeyamNwoWQ5Pg5qFCasq" target="_blank">Tenor</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1ER1cQYXs_oNQYVf6SJfdRVlP3MASoJLi" target="_blank">Baixo</a>]
+    </span>
+  </div>
+</li>
+	<!-- Paciência -->	   
+<li class="audio-item">
+  <div class="audio-title"> 🎧 Paciência 
+    <span class="audio-links">
+      [Soprano❌] 
+      [<a href="https://drive.google.com/uc?export=download&id=1jDsW5iVftL0cyy66QHUn0KwXNnGc1Fz4" target="_blank">Contralto</a>] 
+      [Tenor❌] 
+      [Baixo❌]
+    </span>
+  </div>
+</li>
+
+<!-- Sampa -->
+<li class="audio-item">
+  <div class="audio-title"> 🎧 Sampa 
+    <span class="audio-links">
+      [<a href="https://drive.google.com/uc?export=download&id=1RKP7k6A0weIfNgBbBKwex8GgEuKTzEBh" target="_blank">Soprano</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1anPt9GbgLTTaPEUqBwcEW4SJ8VMS38Gw" target="_blank">Contralto</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1ZX90VPYzoU3eRPxKDLWawZ2xmD_aKVqo" target="_blank">Tenor </a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=11c6SRc2dy9PTeOrhCdE9Ser8N4fCjKWr" target="_blank">Baixo</a>]
+    </span>
+  </div>
+</li>
+
+<!-- Só Quero um Xodó -->
+<li class="audio-item">
+  <div class="audio-title"> 🎧 Só Quero um Xodó 
+    <span class="audio-links">
+      [<a href="https://drive.google.com/uc?export=download&id=18OyJtpdqe_d8JRCf0MbGEjSO9-_MRYZy" target="_blank">Soprano</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=19bnK9j6K8k37-iq8Z42kmBbFQcFl5KL2" target="_blank">Contralto</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1nochRcJwg3Scm0QpDIw0O1BTgPcK7SIN" target="_blank">Tenor</a>] 
+      [Baixo ❌]
+    </span>
+  </div>
+</li>
+
+<!-- The Long and Winding Road -->
+<li class="audio-item">
+  <div class="audio-title"> 🎧 The Long and Winding Road 
+    <span class="audio-links">
+      [<a href="https://drive.google.com/uc?export=download&id=1MrcSdxf5uOltkGHpRKQmU9C3QwtnZREY" target="_blank">Soprano</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1qKdHFo4tUVzYvbmKtg8oSzpokjCB2GvF" target="_blank">Contralto</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1xQecmMs4DW-Bt-yn0XQGjf33YbTZ6AUB" target="_blank">Tenor</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1cyRrARZ1gLuqV-Ytkm_dHLWHemnxPvMs" target="_blank">Baixo</a>]
+    </span>
+  </div>
+</li>
+
+<!-- Vá Pensiero -->
+<li class="audio-item">
+  <div class="audio-title"> 🎧 Vá Pensiero
+
+    <span class="audio-links">
+      [<a href="https://drive.google.com/uc?export=download&id=1CnHBD8IctYx3fxu8whyDygZcuCovaB5e" target="_blank">Soprano 1</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1ar0FAbgZMfg2fYfO2BIuMIkw7Xb1pdf4" target="_blank">Soprano 2</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1r2vCrQqctQL-_tj2UD6PualHsYIN5tv6" target="_blank">Contralto</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1L6NLEUe8R6sgxYXeTybcLfWojuuSgSXK" target="_blank">Tenor 1</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1ihYbidfLLlaShGD1fZ6qm26jDx7oVDcu" target="_blank">Tenor 2</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1SZvtTLHz7pbMEZhfiZt7J-dbAvod30c1" target="_blank">Baixo</a>]
+    </span>
+  </div>
+</li>
+
+<!-- Vivaldi's Gloria Part 1 - Gloria -->
+<li class="audio-item">
+  <div class="audio-title"> 🎧 [Video] Vivaldi's Gloria Part 1 - Gloria 
+    <span class="audio-links">
+      [<a href="https://drive.google.com/uc?export=download&id=1kGP8ChVZcaw1gOg-03RGsiSB7OlO5nOU" target="_blank">Soprano</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1nUDbVzaO9JeIuwx-1_792BQqZxDmLsaC" target="_blank">Contralto</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1aVywLo0k1il3dOGNz2Qyf5e7c-OADlRC" target="_blank">Tenor</a>] 
+      [<a href="https://drive.google.com/uc?export=download&id=1-ppHeEr9qq_dsHHHBiw1fu9qyVLj3xXW" target="_blank">Baixo</a>]
+    </span>
+  </div>
+</li>
+</ul>
+
+		  
+      </ul>
+    </section>
+
+    <section id="apresentacoes" class="card" style="margin-top:28px">
+      <h2>Apresentações / Vídeos</h2>
+      <p class="muted">Assista às apresentações do Coral do CAP no YouTube.</p>
+      <div class="video-list">
+        <div class="video-item">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=CBrl3vYG7r2mQ5x8&amp;list=PLNZL-7QfdOmZ3dzr8yAVBIy7QKWst0iMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <small> Coral do CAP |&nbsp; <a href="https://paulistano.org" target="_blank" rel="noopener">Paulistano.org</a></small>
+<small><p> Feito com <span style="color:red;">♥</span> | <a href="https://chat.openai.com" target="_blank" rel="noopener">ChatGPT</a> & <a href="https://x.ai/grok" target="_blank" rel="noopener">Grok</a> &nbsp;prompts | <a href="https://GitHub.com" target="_blank" rel="noopener">GitHub</a> | <a href="https://developers.google.com/apps-script" target="_blank" rel="noopener">Google Apps Script</a> </p></small>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+

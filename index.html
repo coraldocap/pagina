@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coral do CAP — Página Oficial</title>
+  <meta name="description" content="Site oficial do Coral do CAP (Clube Atlético Paulistano) — Partituras, Áudios e informações sobre o grupo." />
+  <link rel="canonical" href="https://paulistano.org/coral" />
+  <style>
+    :root{
+      --red:#c8102e; 
+      --dark-red:#9b0a20;
+      --white:#ffffff;
+      --muted:#f6f6f6;
+      --text:#222;
+      --max-width:1100px;
+      --radius:14px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:var(--white); color:var(--text); -webkit-font-smoothing:antialiased}
+
+    header{background:linear-gradient(90deg,var(--red),var(--dark-red)); color:var(--white); padding:28px 16px}
+    .container{max-width:var(--max-width);margin:0 auto;padding:0 16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{min-width:72px;height:56px;padding:0 8px;border-radius:12px;background:var(--white);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px;color:var(--red);box-shadow:0 6px 18px rgba(0,0,0,0.12)}
+    .logo img{max-height:48px;max-width:100%}
+    nav{margin-top:12px}
+    nav a{color:rgba(255,255,255,0.95);margin-right:14px;text-decoration:none;font-weight:600}
+
+    main{padding:36px 0}
+    .hero{display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .hero-left{flex:1}
+    h1{margin:0;font-size:clamp(24px,4.5vw,40px);line-height:1.02}
+    p.lead{margin:14px 0 0;color:#222;opacity:0.9}
+    .cta{margin-top:18px}
+    .btn{display:inline-block;padding:10px 16px;border-radius:10px;background:var(--red);color:var(--white);text-decoration:none;font-weight:700}
+
+    .grid{display:grid;grid-template-columns:1fr;gap:28px;margin-top:28px}
+
+    .card{background:var(--muted);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+
+    #sobre h2, #partituras h2, #drive h2, #audios h2, #apresentacoes h2, #aviso h2{color:var(--red)}
+    .about-text{line-height:1.6}
+
+    .sheet-list{display:grid;gap:12px;margin-top:16px}
+    .sheet{display:flex;align-items:center;justify-content:space-between;padding:12px;border-radius:10px;background:var(--white);box-shadow:0 4px 10px rgba(0,0,0,0.04)}
+    .sheet .meta{display:flex;gap:12px;align-items:center}
+    .sheet .file{font-weight:600}
+    .sheet small{display:block;color:#666}
+    .sheet a{color:var(--red);text-decoration:none;font-weight:700}
+
+    .audio-list{margin:0;padding:0;list-style:none;display:block;}
+    .audio-item{background:var(--white);padding:12px;border-radius:10px;margin-bottom:12px;box-shadow:0 4px 10px rgba(0,0,0,0.04)}
+    .audio-title{font-weight:700;margin-bottom:8px;color:var(--red)}
+    .audio-links {
+      font-weight: 600;
+    }
+    .audio-links a{
+      color:var(--red);
+      text-decoration:none;
+      font-weight:600;
+      margin:0 4px;
+    }
+
+    .video-list{display:grid;gap:12px;margin-top:16px}
+    .video-item{border-radius:12px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+    .video-item iframe{width:100%;height:300px;border:0;display:block;border-radius:12px}
+
+    footer{padding:20px 0;text-align:center;color:#444}
+    .muted{color:#666;font-size:14px}
+  </style>
+</head>
+<body>
+<header>
+    <div class="container">
+      <div class="brand">
+        <div class="logo">Coral do CAP</div>
+        <div>
+          <div style="font-weight:800;letter-spacing:.6px">Bem-vindos Á Biblioteca Digital do Coral do CAP</div>
+          <div style="font-size:13px;opacity:.95">Página para auxilar os coralistas | Partituras, Áudios e Apresentações</div>
+        </div>
+      </div>
+      <nav aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#drive">Drive</a>
+		<a href="#apresentacoes">Apresentações</a>
+		<!--<a href="https://paulistano.org" target="_blank" rel="noopener">Como usar o Drive</a>-->
+        <a href="https://paulistano.org" target="_blank" rel="noopener">Paulistano.org&nbsp;</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+        <section id="sobre" class="card" style="margin-top:28px">
+  <h2>Sobre</h2>
+  <p class="about-text">
+    Somos o <strong>Coral do CAP</strong>. Este é um espaço dedicado para que possamos acessar materiais de estudo das músicas do coral, como, partituras e áudios de referência.
+  </p>
+
+  <ul class="about-list" style="list-style:none; padding:0; margin:12px 0 0 0;">
+    <li style="margin-bottom:6px;">
+      🎼 <strong>Maestro:</strong> Marcelo Faraldo Recski
+    </li>
+    <li style="margin-bottom:6px;">
+      🎹 <strong>Pianista:</strong> Walter Rodrigues
+    </li>
+    <li style="margin-bottom:6px;">
+      👩‍🎤 <strong>Monitores:</strong> Ana Weber (Contralto), Carol Borba (Soprano), Johnatan Duarte (Tenor), Eli Soares de Oliveira (Baixo)
+    </li>
+  </ul>
+</section>
+ <!-- AVISO DE USO RESTRITO -->
+    <section id="aviso" class="card" style="margin-top:28px; background:#fff4e5; border-left:5px solid var(--red);">
+      <h2>Aviso Importante</h2>
+      <p class="about-text" style="color:#663300;">
+        Este site e seus conteúdos destinam-se exclusivamente aos membros do Coral do CAP. O uso deste material é permitido apenas para fins educativos. Todos os direitos autorais devem ser respeitados; partituras, áudios e vídeos não podem ser compartilhados publicamente sem autorização.</p>
+    </section>
+   <section id="drive" class="card" style="margin-top:28px">
+  <h2>Drive</h2>
+	   <small></small>
+  <ul class="sheet-list">
+    <!-- Partituras Drive -->
+    <li class="sheet">
+      <div class="meta">
+        <div style="font-weight:800;color:var(--red)">📁</div>
+        <div>
+          <div class="file">Partituras</div>
+          <small>Google Drive</small>
+        </div>
+      </div>
+      <div><a href="https://drive.google.com/drive/folders/1rPXLDXEMNf50QOW821MgUGcD8lM9HlM3?usp=drive_link" target="_blank" rel="noopener">Abrir</a></div>
+    </li>
+    <!-- Todos os Naipes -->
+    <li class="sheet">
+      <div class="meta">
+        <div style="font-weight:800;color:var(--red)">📁</div>
+        <div>
+          <div class="file">Todos os Naipes</div>
+          <small>Google Drive</small>
+        </div>
+      </div>
+      <div><a href="https://drive.google.com/drive/folders/1zgFM0FGAuN0Mm-Nt22C4cDk8etScnL2g" target="_blank" rel="noopener">Abrir</a></div>
+    </li>
+    <!-- Áudios por naipe -->
+    <li class="sheet">
+      <div class="meta">
+        <div style="font-weight:800;color:var(--red)">📁</div>
+        <div>
+          <div class="file">Áudios - Soprano</div>
+          <small>Google Drive</small>
+        </div>
+      </div>
+      <div><a href="https://drive.google.com/drive/folders/1JP3z7-3Tp5jFW9DoWTojxpCgRz5J4yRO?usp=drive_link" target="_blank" rel="noopener">Abrir</a></div>
+    </li>
+    <li class="sheet">
+      <div class="meta">
+        <div style="font-weight:800;color:var(--red)">📁</div>
+        <div>
+          <div class="file">Áudios - Contralto</div>
+          <small>Google Drive</small>
+        </div>
+      </div>
+      <div><a href="https://drive.google.com/drive/folders/1vHt96ISVztJfxv_7sNz2BWoLww8Ukgm7?usp=drive_link" target="_blank" rel="noopener">Abrir</a></div>
+    </li>
+    <li class="sheet">
+      <div class="meta">
+        <div style="font-weight:800;color:var(--red)">📁</div>
+        <div>
+          <div class="file">Áudios - Tenor</div>
+          <small>Google Drive</small>
+        </div>
+      </div>
+      <div><a href="https://drive.google.com/drive/folders/1dEYbF-YOTwwqZSwfIIIrs9HCV9XD8oRd?usp=drive_link" target="_blank" rel="noopener">Abrir</a></div>
+    </li>
+    <li class="sheet">
+      <div class="meta">
+        <div style="font-weight:800;color:var(--red)">📁</div>
+        <div>
+          <div class="file">Áudios - Baixo</div>
+          <small>Google Drive</small>
+        </div>
+      </div>
+      <div><a href="https://drive.google.com/drive/folders/17mu6UHBi6pb-yyTtsiaf4V0txlzr3bc-?usp=drive_link" target="_blank" rel="noopener">Abrir</a></div>
+    </li>
+    <!-- Todos Juntos -->
+    <li class="sheet">
+      <div class="meta">
+        <div style="font-weight:800;color:var(--red)">📁</div>
+        <div>
+          <div class="file">Áudios - Todos Juntos</div>
+          <small>Google Drive</small>
+        </div>
+      </div>
+      <div><a href="https://drive.google.com/drive/folders/1n9CBYLDfNPxfEgh5v0U1jqHiJ5-DiqZ_?usp=drive_link" target="_blank" rel="noopener">Abrir</a></div>
+    </li>
+    <!-- Outros materiais -->
+    <li class="sheet">
+      <div class="meta">
+        <div style="font-weight:800;color:var(--red)">📁</div>
+        <div>
+          <div class="file">Outros</div>
+          <small>Google Drive</small>
+        </div>
+      </div>
+      <div><a href="https://drive.google.com/drive/folders/1lx1bBQyTxxdSQDhwusJ6wAB8B2PLGulQ" target="_blank" rel="noopener">Abrir</a></div>
+    </li>
+  </ul>
+</section>
+</section>
+     <section id="apresentacoes" class="card" style="margin-top:28px">
+      <h2>Apresentações / Vídeos</h2>
+      <p class="muted">Assista às apresentações do Coral do CAP no YouTube.</p>
+      <div class="video-list">
+        <div class="video-item">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=CBrl3vYG7r2mQ5x8&amp;list=PLNZL-7QfdOmZ3dzr8yAVBIy7QKWst0iMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <small> Coral do CAP |&nbsp; <a href="https://paulistano.org" target="_blank" rel="noopener">Paulistano.org</a></small>
+<small><p> Feito com <span style="color:red;">♥</span> | <a href="https://chat.openai.com" target="_blank" rel="noopener">ChatGPT</a> & <a href="https://x.ai/grok" target="_blank" rel="noopener">Grok</a> &nbsp;prompts | <a href="https://GitHub.com" target="_blank" rel="noopener">GitHub</a> | <a href="https://developers.google.com/apps-script" target="_blank" rel="noopener">Google Apps Script</a> </p></small>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
